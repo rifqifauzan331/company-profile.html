@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Rajin Sedekah</title>
+    <link rel="stylesheet" href="kkl.css">
+</head>
+
+<body>
+<section class="image">
+  <img src="ilustrasi.jpg" alt="ilustrasi" class="hero-image">
+</section>
+<div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">Rajin Sedekah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rajin Sedekah</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#tentang">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#program">Program</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Tentang-->
+    <section>
+        <div class="container" id="tentang">
+          <div class="tentang">
+            <h3 class="tentang-title">Tentang</h3>
+            <p class="tentang-text">Rajin Sedekah adalah inisiatif yang bertujuan untuk membantu masyarakat yang kurang mampu atau kurang beruntung, khususnya dalam memenuhi kebutuhan dasar seperti pangan, pendidikan, kesehatan, dan tempat tinggal. Istilah "duafa" merujuk pada mereka yang berada dalam keadaan tidak beruntung secara ekonomi.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--Program-->
+      <div class="container" id="program">
+        <div class="impact-grid">
+          <div class="pendidikan-box">
+            <h3 class="pendidikan-title">Pendidikan</h3>
+            <p class="pendidikan-text">Donasi membantu menyediakan akses pendidikan bagi anak-anak yang mungkin tidak mampu membayar biaya sekolah. Ini termasuk pemberian beasiswa, pengadaan buku, dan alat tulis.</p>
+          </div>
+          <div class="pendidikan-box">
+            <h3 class="pendidikan-title">Kesehatan</h3>
+            <p class="pendidikan-text">Donasi untuk kesehatan merujuk pada upaya mengumpulkan dana, sumber daya, atau barang untuk mendukung layanan kesehatan bagi individu atau komunitas yang membutuhkan. Inisiatif ini sering kali bertujuan untuk meningkatkan akses ke perawatan kesehatan, mencegah penyakit, dan meningkatkan kualitas hidup.</p>
+          </div>
+          <div class="pendidikan-box">
+            <h3 class="pendidikan-title">Santunan</h3>
+            <p class="pendidikan-text">Santunan dalam konteks donasi merujuk pada bantuan atau dukungan yang diberikan kepada individu atau kelompok yang membutuhkan, biasanya untuk memenuhi kebutuhan dasar atau menghadapi situasi sulit. Santunan ini bisa berupa uang, barang, atau layanan, dan bertujuan untuk meringankan beban hidup penerima.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--box-->
+      <div class="section1">
+        <div class="box">
+          <i class="icon"></i>
+          <h3>79</h3>
+          <p>Yatim piatu</p>
+        </div>
+        <div class="box">
+          <i class="icon"></i>
+          <h3>4</h3>
+          <p>Program Berjalan</p>
+        </div>
+        <div class="box">
+          <i class="icon"></i>
+          <h3>7</h3>
+          <p>Relawan</p>
+        </div>
+        <div class="box">
+          <i class="icon"></i>
+          <h3>4</h3>
+          <p>Jangkauan Wilayah</p>
+        </div>
+      </div>
+      
+      <!--Footer-->
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 square">
+                    <div class="heading">Contact</div>
+                    <ul class="contact">
+                        <li><i class="fa-solid fa-envelope"></i> if23.rifqisobarnas@ubpkarawang.ac.id</li>
+                        <li><i class="fa-solid fa-envelope"></i> <a href="https://github.com/rifqifauzan331">rifqifauzan331.github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+    <script>
+        // Ambil semua tautan di navbar
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Hapus kelas active dari semua tautan
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                // Tambahkan kelas active pada tautan yang diklik
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
